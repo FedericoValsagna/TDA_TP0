@@ -4,7 +4,7 @@ def amigos_test(MAX):
     potencial_amigo = {}
     for numero in range(MAX):
         sumatoria_de_divisores = 0
-        for j in range(1, numero):
+        for j in range(1, numero // 2 + 1):
             if numero % j == 0:
                 sumatoria_de_divisores += j
         potencial_amigo[numero] = sumatoria_de_divisores
@@ -19,6 +19,7 @@ def amigos_test(MAX):
 def test_100000():
     resultado_obtenido = amigos_test(100000)
     assert resultado_obtenido == resultado_esperado_100000
+    print("OK TEST!")
 
 test_100000()
 
