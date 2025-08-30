@@ -73,6 +73,6 @@ def amigos(MAX):
             print(numero, potencial)
 
     t_final = time.time()
-    # print(t_final - t_inicial)
+    print(t_final - t_inicial)
 
 amigos(100000)
